@@ -1,7 +1,7 @@
 from src.model.configs.base import Base 
 from sqlalchemy import Column, String, Integer, ForeignKey
 
-class Inscritos(Base)
+class Inscritos(Base):
     __tablename__ = "Inscritos"
 
     id = Column(Integer,primary_key=True, autoincrement=True )

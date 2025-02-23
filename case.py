@@ -7,5 +7,5 @@ class MinhaClasse:
         print("Sai!!!")
 
 
-with MinhaClasse() as mc: 
+with MinhaClasse() as mc:
     print("Estou aqui dentro!")

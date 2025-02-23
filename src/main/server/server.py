@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask
 from src.main.routes.event import event_route_bp
 from src.main.routes.subs import subs_route_bp
 

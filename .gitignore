@@ -1,4 +1,5 @@
 venv 
 schema.db
+Anotacoes.ipynb
 **/__pycache__
 .pytest__cache

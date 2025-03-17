@@ -23,6 +23,7 @@ def test_select_subscriber():
 
     print(resp.nome)
 
+
 @pytest.mark.skip("Ranking in DB")
 def test_ranking():
     evento_id = 3

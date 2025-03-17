@@ -26,31 +26,35 @@ class SubscriberManager:
                     "email":sub.email
                 }
             )
-            return HttpResponse(
+        return HttpResponse(
                 body={
                     "data":{
                         "Type": "Subscriber",
                         "count": len(formatted_subscriber),
                         "subscribers": formatted_subscriber
                     }
-                }
+                },
+                status_code=200
             )
         
     def __format_event_ranking(self, event_ranking:list) -> HttpResponse:
         formatted_event_ranking = []
         for position in event_ranking:
-            event_ranking.append(
+            formatted_event_ranking.append(
                 {
                     "position": position.link, 
                     "total_subscribers":position.total
                 }
             )
-            return HttpResponse(
+        
+        # Fora da identação do For
+        return HttpResponse(
                 body={
                     "data":{
                         "Type": "Ranking",
                         "count": len(formatted_event_ranking),
                         "ranking": formatted_event_ranking
                     }
-                }
+                },
+                status_code=200    
             )

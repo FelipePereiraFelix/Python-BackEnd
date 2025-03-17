@@ -50,4 +50,5 @@ class SubscribersRepository(SubscribersRepositoryInterface):
                 .order_by(desc("total"))
                 .all()
             )
+            print(f"Ranking result for event_id {event_id}: {result}")
             return result

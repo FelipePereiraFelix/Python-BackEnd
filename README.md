@@ -20,7 +20,7 @@ git clone https://github.com/FelipePereiraFelix/Python-BackEnd
 cd Python-BackEnd
 ```
 
-### 2. Crie um ambiente virtual (opcional, mas recomendado)
+### 2. Crie e ative o um ambiente virtual (opcional, mas recomendado)
 Para manter os pacotes isolados:
 
 Venv: https://pypi.org/project/virtualenv/
@@ -28,7 +28,7 @@ Venv: https://pypi.org/project/virtualenv/
 ```bash
 python -m venv venv
 ```
-### 3. Ative o ambiente virtual
+#### Ativando o Ambiente Virtual:
 
 - Windows:
 ```bash
@@ -45,6 +45,13 @@ Antes de rodar o projeto, instale todas as dependências executando:
 
 ```bash
 pip install -r requirements.txt
+```
+
+### ▶️ Rodando o projeto
+Para iniciar a aplicação, execute:
+
+```bash
+python run.py
 ```
 
 
